@@ -24,7 +24,6 @@ def check_website_access(url):
 	return True
 except subprocess.CalledProcessError:
 	return False
-
 									
 def main():
     print("Network Troubleshooting Script")
