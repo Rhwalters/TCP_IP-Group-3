@@ -36,6 +36,14 @@ def main():
 	print("Internet connection: OK")
     else:
 	print("Internet connection: Failed")
+    
+     # Check DNS resolution
+    print("\nChecking DNS resolution...")
+    if check_dns_resolution():
+        print("DNS resolution: OK")
+    else:
+        print("DNS resolution: Failed")
+
 
 																						 
 main()
