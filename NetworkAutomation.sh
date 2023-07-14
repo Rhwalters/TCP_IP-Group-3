@@ -27,12 +27,12 @@ except subprocess.CalledProcessError:
 
 									
 def main():
-										print("Network Troubleshooting Script")
+    print("Network Troubleshooting Script")
     print("=============================")
 
-										# Check internet connection
+    # Check internet connection
     print("Checking internet connection...")
-										if check_internet_connection():
+    if check_internet_connection():
 	print("Internet connection: OK")
     else:
 	print("Internet connection: Failed")
@@ -43,6 +43,14 @@ def main():
         print("DNS resolution: OK")
     else:
         print("DNS resolution: Failed")
+   
+    # Check website access
+    url = input("\nEnter a website URL to check access (e.g., https://example.com): ")
+    print("Checking website access...")
+    if check_website_access(url):
+        print("Website access: OK")
+    else:
+        print("Website access: Failed")
 
 
 																						 
